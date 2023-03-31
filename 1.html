@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portpolio Website</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="https://kit.fontawesome.com/9662ecc27e.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_
+    RANGE&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+
+    <!-- hero Section -->
+
+    <section class="hero" id="home"> 
+        <nav>
+            <h2 class="logo"><span>PORT</span>POLIO</h2>
+            <ul>
+                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+ 
+        <div class="content">
+            <h1>HELLO!</h1>
+            <h3>I'M LAHIRU DILSHAN</h2>
+            <h2>WELCOME TO<br>MY <span>PORTPOLIO</span></h2> 
+            <a href="cv.pdf" class="btn">Download Resume</a>
+            
+            <div class="s-icon">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+    </section>
+        
+    <!-- About Section -->
+
+    <div id="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Lahiru Dilshan Nawarathna. I am in Kalutara, Sri Lanka. 
+                        I am currently studying Software Engineering at Sri Lanka Technical Campus.<br>
+                        Professionally doing Graphic Design and Web Designing.
+                        So I can provide you with the designs you want.
+                        I look forward to providing a relevant creation from time to time.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Programming</li>
+                            <li><span>App Development</span><br>Graphic Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2019 - 2021</span><br>I worked freelance as a Graphic Designer</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design execuutive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at Virtusa (Private) LTD.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>BSc Software Engineering at Sri Lanka Technological Campus </li>
+                            <li><span>2017</span><br>GCE Odinary Level Examination</li>
+                            <li><span>2020</span><br>GCE Advanced Level Examination</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Section --> 
+
+    <div id="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>lahirud608@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+94 70 3171248</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+
+<!-- footer -->
+
+    <div class="footer-bg">
+
+
+    
+        <div class="footer-text">
+            <h1>Copyright By CISCO&copy; Design Pvt.LTD | All Rights Resereved.</h1>
+
+        </div>
+
+    </div>
+    
+<!-- custom js -->
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab (tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUv_NkdjMTsTzhL3ChbEjMgUh3XOpE-XF-jQ5lhsYdOhSTZ2fFAuOvkdzZHInk0VCJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg,innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
