@@ -93,7 +93,7 @@ html {
 }
 
 .hero-left {
-  padding: 200px 0px;
+  padding: 150px 0px;
 }
 
 .hero-right {
@@ -101,6 +101,9 @@ html {
 }
 
 .text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding-bottom: 30px;
 }
 
@@ -130,16 +133,47 @@ html {
 
 .profession-style {
   font-size: 25px;
+  font-weight: 500;
+  color: #c8acd6;
+}
+
+.span-1 {
   font-weight: 300;
   color: #535c91;
+}
+
+.span-1:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+
+.span-2 {
+  font-weight: 300;
+  color: #535c91;
+}
+
+.span-2:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+
+.span-3 {
+  color: #535c91;
+  font-weight: 300;
+}
+
+.span-3:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
 }
 
 /* -----Button CV Download----- */
 
 .cv-button {
-  display: flex;
-  height: 50px;
-  width: 200px;
+  margin: 0px 250px;
   background: #433d8b;
   border-radius: 3rem;
   transition: 0.5s ease;
@@ -151,10 +185,11 @@ html {
 }
 
 .cv-button-layout {
-  padding: 0px 25px;
-  display: flex;
+  margin: 30px 10px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
+  display: flex;
   gap: 15px;
   text-decoration: none;
 }
@@ -170,9 +205,9 @@ html {
 /* Icon */
 
 .s-icon {
-  display: inline-flex;
-  margin: 30px 10px;
-  gap: 25px;
+  display: flex;
+  margin: 80px 10px;
+  gap: 100px;
   justify-content: center;
   align-items: center;
   background: transparent;
