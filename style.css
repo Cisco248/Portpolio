@@ -1,5 +1,4 @@
 :root {
-
   /* Sizes */
   --full-w: 100dvw;
   --full-h: 100dvh;
@@ -69,7 +68,7 @@
   --background-color: rgb(20, 27, 36);
 
   --main-color: rgb(94, 209, 255);
-  
+
   --secondary-color-1: rgb(230, 237, 243);
   --secondary-color-2: rgb(104, 104, 104);
   --secondary-color-3: rgba(139, 148, 158, 0.6);
@@ -77,8 +76,8 @@
   --glow: rgba(255, 255, 255, 1);
   --glow-font: rgba(255, 255, 255, 0.7);
   --glow-bounce: rgba(255, 255, 255, 0.26);
-  
-  --glass: rgba(255, 255, 255, 0.050);
+
+  --glass: rgba(255, 255, 255, 0.05);
 
   /* Screen Sizes for Devices */
   --mw-m-1: 480px;
@@ -120,6 +119,7 @@ html {
   top: 0;
   justify-content: space-around;
   z-index: 5;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
 
@@ -151,7 +151,9 @@ html {
   gap: 100px;
 }
 
-.navigation-bar, li, a {
+.navigation-bar,
+li,
+a {
   background: transparent;
 }
 
@@ -237,7 +239,7 @@ html {
   }
   40% {
     opacity: 0.3;
-  } 
+  }
   50% {
     opacity: 0.4;
   }
@@ -256,7 +258,6 @@ html {
   100% {
     opacity: 1;
   }
-  
 }
 
 .animation-1 {
@@ -274,7 +275,7 @@ html {
     color: var(--secondary-color-1);
   }
   50% {
-      transform: rotate(0);
+    transform: rotate(0);
   }
   75% {
     color: var(--secondary-color-1);
@@ -295,7 +296,7 @@ html {
 .profession-style {
   font-family: var(--secondary-font);
   font-size: var(--fs-xl-1);
-  color: var(--main-color); 
+  color: var(--main-color);
   background: transparent;
 }
 
@@ -316,7 +317,7 @@ html {
   background-repeat: no-repeat;
   background-color: var(--glass);
   background-position-y: 15px;
-  border-radius: 50% ;
+  border-radius: 50%;
   box-shadow: 0px 5px 15px 0px var(--secondary-color-1);
 }
 
@@ -332,7 +333,6 @@ html {
   background-repeat: no-repeat;
   /* background-position-x: center; */
   /* background-position-y: center; */
-  
 }
 
 .about-section-layout {
@@ -345,7 +345,8 @@ html {
 .about-section-layout-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;background: transparent;
+  gap: 20px;
+  background: transparent;
 }
 
 .about-title-layout {
@@ -353,7 +354,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 5px; 
+  padding: 5px;
   background: transparent;
 }
 
@@ -445,7 +446,6 @@ html {
   list-style: none;
   padding-top: 50px;
   background: transparent;
-
 }
 
 .tab-contents {
@@ -494,7 +494,6 @@ html {
   gap: 50px;
   background: transparent;
 }
-
 
 .project-tab-titles {
   display: flex;
@@ -560,7 +559,8 @@ html {
   background: transparent;
 }
 
-.project-picture {}
+.project-picture {
+}
 
 .project-topic {
   font-weight: var(--fw-lg-2);
@@ -578,12 +578,11 @@ html {
   padding: 10px 50px;
   background: transparent;
   text-align: justify;
-
 }
 
 /* Service Section */
 
-.service-section {  
+.service-section {
   background-position: bottom;
   height: 100dvh;
   display: flex;
@@ -591,18 +590,17 @@ html {
   align-items: center;
 }
 
-.service-section-layout {  
+.service-section-layout {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 8rem 10rem;
   width: 100%;
   background: var(--secondary-color-3);
-  
 }
 
 .service-section-layout::after {
-  content: '';
+  content: "";
   z-index: -1;
   inset: 0;
   transform: skewY(-5deg);
@@ -616,7 +614,9 @@ html {
   background-color: transparent;
 }
 
-.service-box, h1, p {
+.service-box,
+h1,
+p {
   background-color: transparent;
 }
 
@@ -650,11 +650,7 @@ html {
   align-items: center;
 }
 
-.container-1
-
-.c-title
-
-.container-2 {
+.container-1 .c-title .container-2 {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -701,13 +697,11 @@ html {
 /* Media Query */
 
 @media (max-width: 1920px) {
-  
   /* Navigation Bar */
   .span-1-style,
-  .logo  {
+  .logo {
     font-size: var(--fs-md-4);
   }
-
 
   .navigation-bar {
     gap: 50px;
@@ -723,17 +717,14 @@ html {
     font-size: var(--fs-sm-4);
     font-weight: var(--fw-sm-3);
   }
-
 }
 
 @media (max-width: 1600px) {
-  
   /* Navigation Bar */
- .span-1-style,
-  .logo  {
+  .span-1-style,
+  .logo {
     font-size: var(--fs-lg-4);
   }
-
 
   .navigation-bar {
     gap: 50px;
@@ -749,17 +740,14 @@ html {
     font-size: var(--fs-md-1);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 1440px) {
-  
   /* Navigation Bar */
   .span-1-style,
-  .logo  {
+  .logo {
     font-size: var(--fs-md-4);
   }
-
 
   .navigation-bar {
     gap: 50px;
@@ -770,7 +758,7 @@ html {
     font-weight: var(--fw-md-2);
   }
 
-    /* Home Section */
+  /* Home Section */
   /* .welcome-note-1 {
   font-family: var(--main-font);
   font-size: var(--fs-3xl-5);
@@ -821,17 +809,14 @@ html {
     font-size: var(--fs-md-1);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 1280px) {
-
   /* Navigation Bar */
   .span-1-style,
   .logo {
     font-size: var(--fs-md-4);
   }
-
 
   .navigation-bar {
     gap: 50px;
@@ -844,31 +829,31 @@ html {
 
   /* Home Section */
   .welcome-note-1 {
-  font-family: var(--main-font);
-  font-size: var(--fs-2xl-5);
-  color: var(--main-color);
-  background: transparent;
+    font-family: var(--main-font);
+    font-size: var(--fs-2xl-5);
+    color: var(--main-color);
+    background: transparent;
   }
 
   .welcome-note-2 {
-  font-family: var(--main-font);
-  font-size: var(--fs-md-3);
-  color: var(--secondary-color-1);
-  background: transparent;
+    font-family: var(--main-font);
+    font-size: var(--fs-md-3);
+    color: var(--secondary-color-1);
+    background: transparent;
   }
 
   .profession-style {
-  font-family: var(--secondary-font);
-  font-size: var(--fs-md-2);
-  color: var(--main-color); 
-  background: transparent;
+    font-family: var(--secondary-font);
+    font-size: var(--fs-md-2);
+    color: var(--main-color);
+    background: transparent;
   }
 
   .base-img {
-  position: relative;
-  height: 600px;
-  z-index: 2;
-  background: transparent;
+    position: relative;
+    height: 600px;
+    z-index: 2;
+    background: transparent;
   }
 
   .shape-1 {
@@ -884,7 +869,7 @@ html {
     height: 350px;
     position: absolute;
     transform: scale(0.8);
-    transform:rotate(30deg) ;
+    transform: rotate(30deg);
     background: transparent;
   }
 
@@ -893,17 +878,14 @@ html {
     font-size: var(--fs-md-1);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 1100px) {
-  
   /* Navigation Bar */
   .span-1-style,
   .logo {
     font-size: var(--fs-md-2);
   }
-
 
   .navigation-bar {
     gap: 50px;
@@ -918,7 +900,7 @@ html {
 
   .hero-content {
     position: relative;
-    background:  linear-gradient(red, blue);
+    background: linear-gradient(red, blue);
     background-size: cover;
   }
 
@@ -951,9 +933,8 @@ html {
 
   .shape-1 {
     display: none;
-
   }
-  
+
   .shape-2 {
     display: none;
   }
@@ -963,11 +944,9 @@ html {
     font-size: var(--fs-sm-2);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 900px) {
-  
   /* Navigation Bar */
   .span-1-style,
   .logo {
@@ -983,7 +962,7 @@ html {
     font-weight: var(--fw-md-2);
   }
 
-    /* Home Section */
+  /* Home Section */
   /* .welcome-note-1 {
   font-family: var(--main-font);
   font-size: var(--fs-3xl-5);
@@ -1028,19 +1007,17 @@ html {
     transform:rotate(30deg) ;
     background: transparent;
   } */
-  
+
   /* Footer Section */
   .footer-text h1 {
     font-size: var(--fs-sm-1);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 800px) {
-
   /* Navigation Bar */
-  .logo, 
+  .logo,
   .span-1-style {
     font-size: var(--fs-sm-5);
   }
@@ -1054,7 +1031,7 @@ html {
     font-weight: var(--fw-md-2);
   }
 
-    /* Home Section */
+  /* Home Section */
   /* .welcome-note-1 {
   font-family: var(--main-font);
   font-size: var(--fs-3xl-5);
@@ -1105,17 +1082,15 @@ html {
     font-size: var(--fs-sm-1);
     font-weight: var(--fw-md-1);
   }
-
 }
 
 @media (max-width: 480px) {
-
   /* Navigation Bar */
   .navigation-bar {
     display: none;
   }
 
-    /* Home Section */
+  /* Home Section */
   /* .welcome-note-1 {
   font-family: var(--main-font);
   font-size: var(--fs-3xl-5);
@@ -1166,16 +1141,4 @@ html {
     font-size: var(--fs-sm-1);
     font-weight: var(--fw-sm-4);
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
