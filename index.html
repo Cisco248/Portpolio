@@ -15,90 +15,47 @@
     />
   </head>
   <body>
-    <div>
       <!-- Header Section -->
-      <div class="header-section">
+      <header class="header-section">
         <div class="logo_content">
-          <h3 class="logo"><span class="span-1-style">Port</span>Polio</h3>
+          <h3 class="logo"><span class="span-1-style">L</span>D</h3>
         </div>
         <ul class="navigation-bar">
           <li>
-            <a class="nav-link active-nav" href="#Home">Home</a>
+            <a class="nav-link active-nav" href="#Home" onscroll="scroll(activeNav)">HOME</a>
           </li>
           <li>
-            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#About" onclick="scroll(activeNav)">ABOUT</a>
           </li>
           <li>
-            <a class="nav-link" href="#Project">Projects</a>
+            <a class="nav-link" href="#Project">PROJECTS</a>
           </li>
           <li>
-            <a class="nav-link" href="#Service">Services</a>
+            <a class="nav-link" href="#Service">SERVICES</a>
           </li>
           <li>
-            <a class="nav-link" href="#Contact">Contact</a>
+            <a class="nav-link" href="#Contact">CONTACTS</a>
           </li>
         </ul>
-      </div>
+      </header>
       <!-- hero Section -->
       <section class="hero-content" id="Home">
-        <div class="hero-content-layout">
+          <div class="hero-content-layout">
           <div class="hero-content-left">
-            <div>
-              <div class="left-side-bar"></div>
-            </div>
-          </div>
-          <div class="hero-content-center">
-            <div class="hero-content-text">
-              <div class="text-section">
-                <h1 class="welcome-note-1">HELLO!</h1>
-                <h2 class="description">WELCOME TO <span>PORTPOLIO</span></h2>
+            <div class="text-section">
+              <div class="welcome-note-section-1">
+                  <h1 class="welcome-note-1">HELLO</h1>
+                  <p class="animation-1">!</p>
+                </div>
                 <h1 class="welcome-note-2">I'M LAHIRU DILSHAN</h1>
-                <ul class="profession-style" id="content">
-                  <li class="span-1">Full Stack Developer</li>
-                  <li style="list-style: none; color: white">|</li>
-                  <li class="span-2">UI & UX Developer</li>
-                  <li style="list-style: none; color: white">|</li>
-                  <li class="span-3">Graphic Designer</li>
+                <h2 class="description"></h2>
+                <ul class="profession-style">
+                  <li class="span-1">Web Developer</li>
                 </ul>
               </div>
-              <a class="cv-button-layout" href="cv.pdf">
-                <div class="button-1-design">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="Layer_1"
-                    data-name="Layer 1"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M12.032,19a2.991,2.991,0,0,0,2.122-.878L18.073,14.2,16.659,12.79l-3.633,3.634L13,0,11,0l.026,16.408-3.62-3.62L5.992,14.2l3.919,3.919A2.992,2.992,0,0,0,12.032,19Z"
-                    />
-                    <path
-                      d="M22,16v5a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V16H0v5a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V16Z"
-                    />
-                  </svg>
-                  Resume
-                </div>
-              </a>
-              <div class="s-icon">
-                <a title="facebook" href="#"
-                  ><i class="fa-brands fa-square-facebook"></i
-                ></a>
-                <a title="Instragram" href="www.intragram.com"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-                <a title="Linkedin" href="www.facebook.com"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
           </div>
           <div class="hero-content-right">
-            <img
-              height="800"
-              class="base-img"
-              src="/Images/IMG_1375.jpg"
-              alt=""
-            />
+            <div class="mask-image"></div>
           </div>
         </div>
       </section>
@@ -106,106 +63,80 @@
       <div class="about-section" id="About">
         <div class="about-section-layout">
           <div class="about-section-layout-left">
-            <div class="left-side-bar-2"></div>
-          </div>
-          <div class="about-section-layout-center">
-            <div class="about-section-layout-center-layout">
-              <h1 class="sub-title">ABOUT ME</h1>
-              <p class="about-description">
+            <div class="about-title-layout">
+              <span class="s-1">●</span>
+              <h1 class="sub-title">ABOUT</h1>
+              <span class="s-1">●</span>
+            </div>
+            <p class="about-description">
                 My name is Lahiru Dilshan Nawarathna. I am in Kalutara, Sri
                 Lanka. I am currently studying Software Engineering at Sri Lanka
                 Technical Campus. Professionally doing Graphic Design and Web
                 Designing. So I can provide you with the designs you want. I
                 look forward to providing a relevant creation from time to time.
-              </p>
-            </div>
+            </p>
           </div>
           <div class="about-section-layout-right">
             <div class="tab-titles">
-              <p
-                class="tab-links active-link"
-                onclick="opentab('Skills', '1.jpg')"
-              >
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('Experience', '2.jpg')">
-                Experience
-              </p>
-              <p
-                class="tab-links"
-                onclick="opentab('Education', 'education.svg')"
-              >
-                Education
-              </p>
+              <h2 class="tab-links active-link" onclick="opentab1('Skills')">Skills</h2>
+              <h2 class="tab-links" onclick="opentab1('Experience')">Experience</h2>
+              <h2 class="tab-links" onclick="opentab1('Education')">Education</h2>
             </div>
             <div class="tab-contents active-tab" id="Skills">
-              <ul>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> UI/UX </span>
-                  <h1 class="tab-content-sub-topic">
-                    Adobe XD | Figma | Corel Draw | Canva
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> Web Development </span>
-                  <h1 class="tab-content-sub-topic">
+              <div class="box">
+                <h1 class="tab-contents-topic">◄ Tool & Software ►</h1>
+                  <h3 class="tab-contents-sub-topic">
+                    Adobe XD | Figma | Corel Draw | Canva | Photoshop | Illustrator | After Effect | Premier Pro
+                  </h3>
+              </div>
+              <div class="box">
+                <h1 class="tab-contents-topic">◄ Programming Language ►</h1>
+                  <h3 class="tab-contents-sub-topic">
                     Node js | Javascript | React | Firebase | Mongodb | Flutter
                     | Express
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic">
-                    Graphic & Video Editing
-                  </span>
-                  <h1 class="tab-content-sub-topic">
-                    Photoshop | Illustrator | After Effect | Premier Pro
-                  </h1>
-                </li>
-              </ul>
+                  </h3>
+              </div> 
+                  
             </div>
             <div class="tab-contents" id="Experience">
-              <ul>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2019 - 2021 </span>
-                  <h1 class="tab-content-sub-topic">
+              <div class="box">
+                <h1 class="tab-contents-topic"> 2019 - 2021 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     I worked freelance as a Graphic Designer
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2017 - 2019 </span>
-                  <h1 class="tab-content-sub-topic">
+                  </h3>
+              </div>
+              <div class="box">
+                <h1 class="tab-contents-topic"> 2017 - 2019 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     UI/UX Design execuutive at Coin Digital LTD
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2016 - 2017 </span>
-                  <h1 class="tab-content-sub-topic">
+                  </h3>
+              </div>
+              <div class="box">
+                <h1 class="tab-contents-topic"> 2016 - 2017 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     Internship at Virtusa (Private) LTD
-                  </h1>
-                </li>
-              </ul>
+                  </h3>
+              </div>
             </div>
             <div class="tab-contents" id="Education">
-              <ul>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2022 </span>
-                  <h1 class="tab-content-sub-topic">
+              <div class="box">
+                <h1 class="tab-contents-topic"> 2022 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     BSc Software Engineering at Sri Lanka Technological Campus
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2017 </span>
-                  <h1 class="tab-content-sub-topic">
+                  </h3>
+              </div>
+              <div class="box">
+                  <h1 class="tab-contents-topic"> 2017 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     GCE Odinary Level Examination
-                  </h1>
-                </li>
-                <li class="tab-content-list">
-                  <span class="tab-content-topic"> 2020 </span>
-                  <h1 class="tab-content-sub-topic">
+                  </h3>
+              </div>
+              <div class="box">
+                <h1 class="tab-contents-topic"> 2020 </h1>
+                  <h3 class="tab-contents-sub-topic">
                     GCE Advanced Level Examination
-                  </h1>
-                </li>
-              </ul>
+                  </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -213,198 +144,139 @@
       <!--Project Section  -->
       <div class="project-section" id="Project">
         <div class="project-section-layout">
-          <div class="project-section-layout-left">
-            <div class="left-side-bar-3"></div>
+          <div class="project-tab-titles">
+            <h2 class="project-tab-links active-link" onclick="opentab2('UI & UX Design')">UI & UX Design</h2>
+            <h2 class="project-tab-links" onclick="opentab2('Web Development')">Web Development</h2>
+            <h2 class="project-tab-links" onclick="opentab2('Graphics & Video Editing')">Graphics & Video Editing</h2>
           </div>
-          <div class="project-section-layout-center">
-            <div class="box-1">
-              <img class="project-image" src="/Images/images.jpeg" alt="" />
-              <h1 class="project-title">Quiz Management System</h1>
-              <div class="project-description-layout">
-                <h3 class="project-description">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
-                </h3>
-              </div>
+          <div class="project-tab-contents active-tab" id="UI & UX Design">
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">E-Commerce Web Design</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
             </div>
-            <div class="box-2">
-              <img
-                class="project-image"
-                src="/Images/Project-Management-Plan-Templates-1013x441.jpg"
-                alt=""
-              />
-              <h1 class="project-title">Easy Dealz E - Market</h1>
-              <div class="project-description-layout">
-                <h3 class="project-description">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
-                </h3>
-              </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Quiz Management System Design</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
             </div>
-            <div class="box-3">
-              <img
-                class="project-image"
-                src="/Images/project-proposal-template.png"
-                alt=""
-              />
-              <h1 class="project-title">Empty</h1>
-              <div class="project-description-layout">
-                <h3 class="project-description">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
-                </h3>
-              </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Quizzify QMS Mobile Application</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
             </div>
-            <!-- <div class="box-4">
-              <img
-                class="project-image"
-                src="/Images/project_plan_template_proposal_sample_document_report_doc_pdf_ppt_slide01.jpg"
-                alt=""
-              />
-              <h1 class="project-title">Empty</h1>
-              <div class="project-description-layout">
-                <h3 class="project-description">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
-                </h3>
-              </div>
-            </div> -->
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Untitled Project</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+          </div>
+          <div class="project-tab-contents" id="Web Development">
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">EazyDealz E-Commerce Platform</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Quizzify Quiz Management System</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Untitled Project</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Untitled Project</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+          </div>
+          <div class="project-tab-contents" id="Graphics & Video Editing">
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Flyer Design</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">2D Animation</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Untitled</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="tab-box">
+              <img class="project-picture" src="" alt="">
+              <h4 class="project-topic">Untitled</h4>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
           </div>
         </div>
       </div>
       <!--Services Section  -->
       <div class="service-section" id="Service">
         <div class="service-section-layout">
-          <div class="service-section-layout-left">
-            <div class="left-side-bar-3"></div>
+          <div class="service-section-layout-center">
+            <div class="service-box">
+              <h1 class="s-title">New Innovative Idea's</h1>
+              <p class="s-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="service-box">
+              <h1 class="s-title">Friendly Collabaration</h1>
+              <p class="s-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
+            <div class="service-box">
+              <h1 class="s-title">Creative Thinking</h1>
+              <p class="s-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda rerum ab reprehenderit incidunt quis voluptates consectetur, tempore eligendi voluptas quisquam repudiandae accusamus illum nisi temporibus dolorem non doloremque similique!</p>
+            </div>
           </div>
-          <div class="service-section-layout-center"></div>
-          <div class="service-section-layout-right"></div>
         </div>
       </div>
       <!-- Contact Section -->
       <div class="contact-section" id="Contact">
-        <div class="container">
-            
-                <div class="contact-left">
-                    <div class="contact-left-row-1">
-                        <h1 class="contact-left-row-1-topic">Contact Me</h1>
-                    </div>
-                    <div class="contact-left-row-2">
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-paper-plane"></i>lahirud608@gmail.com</p>
-                        <br>
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-paper-plane"></i>lahirud@facebook.com</p>
-                        <br>
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-paper-plane"></i>lahirud@instragram.com</p>
-                        <br>
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-paper-plane"></i>lahirud608@linkedin.com</p>
-                        <br>
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-paper-plane"></i>lahirud608@tweeter.com</p>
-                        <br>
-                        <p class="contact-left-row-2-topic"><i class="fa-solid fa-phone-volume"></i>+94 70 3171248</p>
-                        <br>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="First Name" placeholder="Your First Name" autocomplete="off" required>
-                        <input type="text" name="Last Name" placeholder="Your Last Name" autocomplete="off" required>
-                        <input type="email" name="Email" placeholder="Your Email" autocomplete="off" required>
-                        <textarea name="Message" rows="5" placeholder="Your Message" autocomplete="off">
-                        <div class="submit-button-layout">
-                            <button type="submit" class="submit-button">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            
+        <div class="wrapper">
+          <div class="container-1">
+            <h1 class="c-title">Contact Me</h1>
+          </div>
+          <div class="container-2">
+              <p class="c-sub-title"><i class="fa-solid fa-paper-plane"></i>lahirud608@gmail.com</p>
+              <br>
+              <p class="c-sub-title"><i class="fa-solid fa-paper-plane"></i>lahirud@facebook.com</p>
+              <br>
+              <p class="c-sub-title"><i class="fa-solid fa-paper-plane"></i>lahirud@instragram.com</p>
+              <br>
+              <p class="c-sub-title"><i class="fa-solid fa-paper-plane"></i>lahirud608@linkedin.com</p>
+              <br>
+              <p class="c-sub-title"><i class="fa-solid fa-paper-plane"></i>lahirud608@tweeter.com</p>
+              <br>
+              <p class="c-sub-title"><i class="fa-solid fa-phone-volume"></i>+94 70 3171248</p>
+              <br>
+          </div>
+          <div class="container-3">
+            <form name="submit-to-google-sheet">
+              <input class="input-style" type="text" name="First Name" placeholder="Your First Name" autocomplete="off" required>
+              <input class="input-style" type="text" name="Last Name" placeholder="Your Last Name" autocomplete="off" required>
+              <input class="input-style" type="email" name="Email" placeholder="Your Email" autocomplete="off" required>
+              <textarea class="input-textarea" name="Message" placeholder="Your Message" autocomplete="off">
+              <div class="c-button-container">
+                <button type="submit" class="c-button">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
       <!-- footer -->
       <footer class="footer-bg">
         <div class="footer-text">
             <h1>Copyright By CISCO&copy; Design Pvt.LTD | All Rights Resereved.</h1>
         </div>
-    </footer> 
-    </div>
+      </footer> 
 
     <!-- custom js -->
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname, imageName) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-        changeImage(imageName);
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyUv_NkdjMTsTzhL3ChbEjMgUh3XOpE-XF-jQ5lhsYdOhSTZ2fFAuOvkdzZHInk0VCJ/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg, (innerHTML = "");
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
