@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00aeef;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: CooperBlack, 'Cooper Black';
+        font-size: 12px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(7.85 14.1)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-2" transform="translate(2.42 14.03)"><tspan x="0" y="0">L</tspan></text>
+</svg>
