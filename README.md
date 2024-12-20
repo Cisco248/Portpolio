@@ -2,13 +2,11 @@
 
 ## HTML & CSS Progress
 
-### Section Status Q-Status
-
-1. Navigation [X]
-2. Footer [X]
-3. Home [X]
-4. About [X]
-5. Projects [X]
+1. Navigation [x]
+2. Footer [x]
+3. Home [x]
+4. About [x]
+5. Projects [x]
 6. Services [ ]
 7. Contact [ ]
 
