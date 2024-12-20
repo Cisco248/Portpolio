@@ -1,29 +1,33 @@
 # HTML Index File Progress -----------------
 
-# HTML & CSS Progress
+## HTML & CSS Progress
 
-## Section               Status                Q-Status
-1. Navigation             [X]                    [X]
-2. Footer                 [X]                    [X]
-3. Home                   [X]                    [X]
-4. About                  [X]                    [X]
-5. Projects               [X]                    [X]
-6. Services               [ ]                    [ ]
-7. Contact                [ ]                    [ ]
+### Section Status Q-Status
 
-# Javascript Progress  
+1. Navigation [X]
+2. Footer [X]
+3. Home [X]
+4. About [X]
+5. Projects [X]
+6. Services [ ]
+7. Contact [ ]
 
-## Section               Status 
-1. Navigation             [ ]
-2. Footer                 [X]             
-3. Home                   [ ]             
-4. About                  [X]                    
-5. Projects               [X]                    
-6. Services               [ ]                    
-7. Contact                [ ]
+## Javascript Progress
 
-## Additional Note 
+### Section Status
 
-### Create New Curriculum or Resume        [ ]
-### Host the Personal Portpolio            [ ]
-### Add to the LinkedIn                    [ ]
+1. Navigation [ ]
+2. Footer [X]
+3. Home [X]
+4. About [X]
+5. Projects [X]
+6. Services [ ]
+7. Contact [ ]
+
+## Additional Note
+
+### Create New Curriculum or Resume [ ]
+
+### Host the Personal Portpolio [X]
+
+### Add to the LinkedIn [ ]

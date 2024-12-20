@@ -1,0 +1,34 @@
+/* Contact Section */
+
+.contact-section {
+  background-position: bottom;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 .c-title .container-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* .c-sub-title
+
+.container-3
+
+.input-style
+
+.input-textarea
+
+.c-button-container
+
+.c-button */
