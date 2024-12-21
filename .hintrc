@@ -11,6 +11,12 @@
           "mask-image"
         ]
       }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
     ]
   }
 }
