@@ -1,4 +1,4 @@
-# HTML Index File Progress -----------------
+# HTML Index File Progress
 
 ## HTML & CSS Progress
 
@@ -15,10 +15,10 @@
 ### Section Status
 
 1. Navigation [ ]
-2. Footer [X]
-3. Home [X]
-4. About [X]
-5. Projects [X]
+2. Footer [x]
+3. Home [x]
+4. About [x]
+5. Projects [x]
 6. Services [ ]
 7. Contact [ ]
 
@@ -26,6 +26,6 @@
 
 ### Create New Curriculum or Resume [ ]
 
-### Host the Personal Portpolio [X]
+### Host the Personal Portpolio [x]
 
 ### Add to the LinkedIn [ ]
