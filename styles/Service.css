@@ -39,6 +39,11 @@ p {
   border: 2px solid transparent;
 }
 
+.service-icon {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
 .s-description {
   font-family: var(--secondary-font-1);
   font-size: var(--fs-sm-5);
