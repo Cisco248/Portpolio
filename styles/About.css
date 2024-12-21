@@ -4,6 +4,8 @@
   align-items: center;
   height: 100dvh;
   width: 100%;
+  background-image: url(/Images/circle-scatter\ copy.svg);
+  background-size: cover;
 }
 
 .about-section-layout {
@@ -22,7 +24,6 @@
   background: transparent;
   height: 100dvh;
   width: 50%;
-  background-color: var(--glass);
 }
 
 .about-title-layout {
@@ -106,6 +107,7 @@
   align-items: center;
   height: 100dvh;
   width: 50%;
+  background-color: transparent;
 }
 
 .skills-section {
@@ -115,7 +117,9 @@
   justify-content: space-between;
   font-family: var(--secondary-font-3);
   color: var(--secondary-color-1);
-  width: 100%;
+  padding: 30px 30px;
+  background-color: var(--glass);
+  border-radius: 20px;
 }
 
 .skill-title {
@@ -129,6 +133,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: transparent;
 }
 
 .skill {
@@ -142,7 +147,9 @@
   justify-content: space-between;
   font-family: var(--secondary-font-3);
   color: var(--secondary-color-1);
-  width: 100%;
+  padding: 30px;
+  background-color: var(--glass);
+  border-radius: 20px;
 }
 
 .education-title {
@@ -157,6 +164,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  background-color: transparent;
 }
 
 .education {
