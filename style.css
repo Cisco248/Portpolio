@@ -516,7 +516,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/Images/circle-scatter.svg);
+  background-image: url(Images/circle-scatter.svg);
   background-size: cover;
 }
 
@@ -619,7 +619,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/Images/blob-scene.svg);
+  background: url(Images/blob-scene.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -678,7 +678,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/Images/layered-waves.svg);
+  background-image: url(Images/layered-waves.svg);
   background-position: center;
   background-size: cover;
 }
