@@ -1,3 +1,12 @@
+// Navigation Bar Active
+var navlinks = document.getElementsByClassName("nav-links");
+
+function activeNav() {
+    for (navlink of navlinks) {
+        navlink.classList.remove("active-nav");
+
+    event.currentTarget.classList.add("active-nav");
+
 // About Section Tab Content
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
